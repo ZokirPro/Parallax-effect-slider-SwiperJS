@@ -1,0 +1,34 @@
+.swiper-container {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.swiper-container .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 60px;
+}
+
+.swiper-container .swiper-slide .title {
+  font-size: 100px;
+  font-weight: 300;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=style.css.map */

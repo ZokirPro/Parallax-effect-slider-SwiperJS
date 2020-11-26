@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax effect slider with SwiperJS</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    
+        <!-- Slider main container -->
+    <div class="swiper-container">
+        <div class="parallax-bg" style="background-image:url(/images/1.jpg)" data-swiper-parallax="-23%"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div  class="title" data-swiper-parallax="300" data-swiper-parallax-opacity="0">
+                    Slide 1
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div  class="title" data-swiper-parallax="300" data-swiper-parallax-opacity="0">
+                    Slide 2
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div  class="title" data-swiper-parallax="300" data-swiper-parallax-opacity="0">
+                    Slide 3
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div  class="title" data-swiper-parallax="300" data-swiper-parallax-opacity="0">
+                    Slide 4
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div  class="title" data-swiper-parallax="300" data-swiper-parallax-opacity="0">
+                    Slide 5
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div  class="title" data-swiper-parallax="300" data-swiper-parallax-opacity="0">
+                    Slide 6
+                </div>
+            </div>
+            
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+        
+            speed: 600,
+            parallax: true,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable:true
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        })
+    </script>
+</body>
+</html>
